@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "pythonproject"
+version = "0.1.0"
+description = ""
+authors = ["Alex Steele <asteele9@students.cs.ubc.ca>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gymnasium = {version = "^0.29.1", extras = ["mujoco"]}
+mujoco = "~2.3.7"
+numpy = "^1.26.2"
+opencv-python = "^4.8.1.78"
+stable-baselines3 = "~2.2.1"
+torch = {url = "https://download.pytorch.org/whl/cu118/torch-2.1.1%2Bcu118-cp310-cp310-win_amd64.whl"}
+tensorboard = "^2.16.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+ruff = "^0.1.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
